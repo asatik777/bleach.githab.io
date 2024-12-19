@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отбеливатель</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BLEACH</h1>
+        <p>Для того, чтобы перейти на сайт, заполните поля с вводом своих данных:</p>
+
+        <form id="loginForm">
+            <!-- Поле для логина -->
+            <label for="login">Логин (только русские символы и цифры, от 4 до 10 символов):</label>
+            <input type="text" id="login" name="login" required>
+            <div class="error" id="loginError">Ошибка: Логин должен содержать только русские буквы и цифры, от 4 до 10 символов.</div>
+
+            <!-- Поле для даты рождения -->
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required min="1950-12-17" max="2024-12-28">
+            <div class="error" id="birthdateError">Ошибка: Дата должна быть в пределах от 17.12.1950 до 28.12.2024.</div>
+
+            <!-- Пол для выбора пола -->
+            <label>Пол:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Мужчина" required>
+                <label for="male">Мужчина</label>
+                <input type="radio" id="female" name="gender" value="Женщина" required>
+                <label for="female">Женщина</label>
+            </div>
+
+            <!-- Кнопка перехода -->
+            <button type="submit">Перейти на сайт</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
