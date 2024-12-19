@@ -1,0 +1,123 @@
+/* Общие стили для страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed; /* Фон страницы */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование фона */
+  animation: backgroundAnimation 10s infinite alternate; /* Анимация фона */
+  color: #fff; /* Цвет текста */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Анимация для фона */
+@keyframes backgroundAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+/* Контейнер для формы */
+.container {
+  background: rgba(0, 0, 0, 0.6); /* Затемнённый фон для читаемости текста */
+  padding: 30px 40px;
+  border-radius: 15px; /* Округленные углы у контейнера */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Тень вокруг контейнера */
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 2.5rem;
+  color: #3e3b3b; /* Белый цвет для заголовка "Отбеливатель" */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Тень текста */
+}
+
+/* Описание */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Поля ввода */
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px; /* Увеличен размер для большего комфорта */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Округленные углы для полей ввода */
+  font-size: 1rem;
+  background-color: #f0f0f0; /* Цвет фона поля ввода */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 0 5px #00bfff;
+}
+
+/* Сообщения об ошибках */
+.error {
+  color: #ff4c4c;
+  font-size: 0.9rem;
+  display: none; /* Скрыто по умолчанию */
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Радиокнопки (Пол) */
+.gender {
+  display: flex;
+  justify-content: center; /* Центрируем радиокнопки */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gender input[type="radio"] {
+  margin-right: 10px; /* Отступ между радиокнопками */
+  cursor: pointer;
+}
+
+.gender label {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Кнопка отправки */
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: #fff; /* Белый цвет текста на кнопке */
+  background-color: #323536; /* Цвет кнопки */
+  border: none;
+  border-radius: 25px; /* Округленные углы у кнопки */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #131414; /* Цвет кнопки при наведении */
+}
