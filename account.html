@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="menucss.css">
+</head>
+<body>
+    <!-- Видео фон -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="image2/background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Верхнее меню -->
+    <div class="header">
+        <img src="image2/logo.png" alt="Logo" class="logo-img">
+        <div class="menu">
+            <a href="next.html">Описание</a>
+            <a href="dictionary.html">Словарь</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="test.html">Тест</a>
+            <a href="account.html">Личный кабинет</a>
+        </div>
+        <div class="logout">
+            <a href="logout.html">Выйти</a>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>Личный кабинет</h1>
+        <div class="info-box">
+            <p><strong>Имя:</strong> <span id="userName">-</span></p>
+            <p><strong>Пол:</strong> <span id="userGender">-</span></p>
+            <p><strong>Дата рождения:</strong> <span id="userBirthdate">-</span></p>
+            <p><strong>Баллы за тест:</strong> <span id="userScore">-</span></p>
+        </div>
+        <!-- Кнопка выхода -->
+        <div class="logout-button-container">
+            <button class="logout-button" onclick="window.location.href='index.html'">Выйти</button>
+        </div>
+    </div>
+
+    <!-- Нижнее меню -->
+    <div class="footer-menu">
+        <div class="social-links-left">
+            <a href="https://m.vk.com/asfairs" target="_blank">
+                <img src="image2/vk-logo.png" alt="VK">
+            </a>
+            <a href="http://web.telegram.org/" target="_blank">
+                <img src="image2/telegram-logo.png" alt="Telegram">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="next.html">Описание</a>
+            <a href="dictionary.html">Словарь</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="test.html">Тест</a>
+            <a href="account.html">Личный кабинет</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
